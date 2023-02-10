@@ -1,0 +1,56 @@
+@import './variable';
+@import './config';
+
+.last-section{
+    .r-1{
+        .sml-size-txt{
+            font-size: 1em !important;
+            color: $primary-color !important;
+    
+        }
+
+    }
+   
+    
+    .r-2{   
+        .lrg-cl-txt{
+            font-size: 1.5em;
+            color: $primary-color;
+            
+        }
+    }
+    .users-card{
+        padding: 0.5rem 4rem;
+        border: 1px solid gray;
+    }
+    .users-card img{
+        border-bottom: 1px solid gray;
+        height: 150px;
+        width: 150px;
+       
+        
+        
+
+    }
+    .users-card .card-text{
+       
+       
+        color: $primary-color;
+        
+    }
+     .users-card h3{
+        color: $primary-color;
+        
+        
+    }
+     .users-card h2{
+        padding-top: 1em;
+        color: $primary-color;
+    }
+    .users-card button{
+        @include forBtn(white,$primary-color);
+       
+    }
+    
+    
+}

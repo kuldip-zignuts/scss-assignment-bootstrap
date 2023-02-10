@@ -1,0 +1,57 @@
+@import "./variable";
+@import "./config";
+
+.section-merge{
+    background-color:#ADD8E6;
+    
+    .bttn{   
+        button{
+           @include forBtn(white,$primary-color);
+           
+        }
+    }
+    .section4{
+        
+        .sml-size-txt{
+            font-size: 1rem;
+            color: $primary-color;
+        }
+        .lrg-cl-text{
+            color: $primary-color;
+        }
+        
+    }
+    .section5{
+
+        
+        .card-section-5{
+            width: 100%;
+
+            .upper-5 img{
+                width: 100% !important;
+                
+                
+                border-radius:10px 10px 0 0 ;
+            }
+        }
+        .lower-5{
+            width: 100%;
+           
+            
+            border-radius: 0px 0px 10px 10px;
+            gap: 17px;
+                 
+            .sml-text-5{
+                font-size: 0.8rem;
+            }
+            .lrg-txt-5{
+                font-size: 1rem;
+                font-weight: map-get($map: $font-weight ,  $key: bold );
+            }
+        }
+      
+    
+    }
+    
+   
+}

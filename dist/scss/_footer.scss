@@ -1,0 +1,10 @@
+.bg-blue{
+    background-color: $primary-color !important;
+}
+.foter{  
+    background-color: $primary-color;
+    span{
+        font-size: 1.3em;
+        font-weight: map-get($map: $font-weight, $key: bold);   
+    }
+}

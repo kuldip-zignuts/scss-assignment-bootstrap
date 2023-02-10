@@ -1,0 +1,103 @@
+@import './config';
+@import './variable';
+
+.section2{
+    
+    .main-div{
+    
+    margin: 10px 20px;
+    
+
+    &-clr{
+        color: $primary-color;
+    }
+    &-btn button{
+        border: 1px solid $primary-color;
+        border-radius: 5px;
+        background-color: $primary-color;
+        color: white;
+        padding: 10px;
+    }
+    
+}
+@media (max-width:600px){
+    
+        .main-div{
+            display: flex;
+            flex-direction: column !important;
+            align-items: center;
+            gap: 20px;
+        }
+        .main-div-text{
+            text-align: center;
+        }
+    
+}
+// @media (max-width:600px) {
+//     .main-div{
+        
+
+//         button{
+//             margin-top:10px;
+//         }
+//     }
+    
+// }
+}
+
+.section-3{
+    
+    .section3-card{
+        border-radius: 10px;
+        padding: 20px 10px;
+        @include forBtn(white,$primary-color);
+        
+
+        .upper-content{
+            
+            gap: 20px;
+
+            .upp-clm .section-clm{
+                font-size: 0.8rem;
+                font-weight: 500;
+            }
+            .upp-clm .upp-alm-clr{
+                color: $primary-color;
+            }
+            .upp-clm .small-text{
+                font-size: 0.7rem;
+            }
+            img{
+                height: 25px;
+                width: 25px;
+            }
+
+        }
+        .middle-content img{
+            width: 100%;
+            border-radius: 15px;
+            padding: 10px 10px;
+
+        }
+        .lower-content button{
+            @include forBtn(white,$primary-color);
+            
+           
+
+        }
+    } 
+   
+}
+// @media (max-width:378px){
+//     .middle-content img{
+//         height: 140px !important;
+        
+//     }
+// }
+// @media (min-width:1199px){
+//     .r-1200{
+//         width: 33% !important;
+        
+        
+//     }
+// }

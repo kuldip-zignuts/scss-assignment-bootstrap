@@ -1,0 +1,69 @@
+@import './variable';
+
+.main{
+    height: 80vh;
+    background-image: url("../assets/ocean.webp");
+    background-size: cover;
+   
+    color: white;
+    .ctnr{
+       
+        &-1 span{
+            color: $primary-color;
+            
+            
+        }
+        &-2{
+           
+            width: 80%;
+            border-top: 1px solid gray;   
+        }
+        &-3{
+         
+            gap: 1em;
+            
+            img{
+                height: 30px;
+                width: 30px;        
+            }
+            button{
+                border: 1px solid white;
+                background-color: transparent;
+                color: white;
+                border-radius: 10px;
+                font-weight: map-get($map: $font-weight, $key: bold );
+            }
+            .btn-watch{
+                gap: 10px;
+                font-weight: map-get($map: $font-weight, $key: bold );
+            }
+
+        }
+    }
+    @media (max-width:600px){
+        .main{
+            height: 70vh;
+        }
+    }
+
+}
+@media (max-width:600px){
+    .ctnr-1-h1{
+        font-size: 1.5rem;
+    }
+    .ctnr-2-p{
+        font-size: 0.8rem;
+    }
+}
+@media (max-width:400px){
+    .ctnr-2-p{
+        font-size: 0.7rem;
+    }
+    .ctnr-1-h1{
+        font-size: 1.2rem;
+    }
+    .ctnr-3{
+        display: flex;
+        flex-direction: column;
+    }
+}

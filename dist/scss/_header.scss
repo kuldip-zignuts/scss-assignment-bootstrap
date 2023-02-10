@@ -1,0 +1,30 @@
+@import './variable';
+@import './config';
+
+.header{
+    
+    color: white ;
+    
+        .nvbar-login button{
+            
+            border: 2px solid $primary-color;
+            border-radius: 10px;
+            color: $primary-color !important;
+           
+        }
+        .nvbar{
+            background-color: $primary-color;
+
+        }
+        
+    }
+    @media (max-width:576px){
+        .ul-media{
+            width: 100% !important;
+            text-align: center;
+
+        }
+        .btn-media{
+            margin: 1em auto;
+        }
+    }
